@@ -72,7 +72,7 @@ public:
 	DW1000Time(byte data[]);
 	DW1000Time(const DW1000Time& copy);
 	DW1000Time(float timeUs);
-	DW1000Time(int32_t value, float factorUs);
+	DW1000Time(uint32_t value, float factorUs);
 	~DW1000Time();
 	
 	// setter
@@ -83,7 +83,7 @@ public:
 	
 	// real time in us
 	void setTime(float timeUs);
-	void setTime(int32_t value, float factorUs);
+	void setTime(uint32_t value, float factorUs);
 	
 	// getter
 	int64_t getTimestamp() const;

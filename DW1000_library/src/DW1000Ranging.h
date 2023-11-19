@@ -46,7 +46,7 @@
 #define LEN_DATA 90
 
 //Max devices we put in the networkDevices array ! Each DW1000Device is 74 Bytes in SRAM memory for now.
-#define MAX_DEVICES 7
+#define MAX_DEVICES 10
 
 //Default Pin for module:
 #define DEFAULT_RST_PIN 9
@@ -158,7 +158,7 @@ private:
 	static uint32_t    _lastActivity;
 	static uint32_t    _resetPeriod;
 	// reply times (same on both sides for symm. ranging)
-	static uint16_t     _replyDelayTimeUS;
+	static uint32_t     _replyDelayTimeUS;
 	//timer Tick delay
 	static uint16_t     _timerDelay;
 	// ranging counter (per second)

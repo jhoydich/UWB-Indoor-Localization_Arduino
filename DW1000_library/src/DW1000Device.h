@@ -53,12 +53,12 @@ public:
 	void setFPPower(float power);
 	void setQuality(float quality);
 	
-	void setReplyDelayTime(uint16_t time) { _replyDelayTimeUS = time; }
+	void setReplyDelayTime(uint32_t time) { _replyDelayTimeUS = time; }
 	
 	void setIndex(int8_t index) { _index = index; }
 	
 	//getters
-	uint16_t getReplyTime() { return _replyDelayTimeUS; }
+	uint32_t getReplyTime() { return _replyDelayTimeUS; }
 	
 	byte* getByteAddress();
 	
@@ -95,7 +95,7 @@ private:
 	byte         _ownAddress[8];
 	byte         _shortAddress[2];
 	int32_t      _activity;
-	uint16_t     _replyDelayTimeUS;
+	uint32_t     _replyDelayTimeUS;
 	int8_t       _index; // not used
 	
 	int16_t _range;
